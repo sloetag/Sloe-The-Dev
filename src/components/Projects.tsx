@@ -6,17 +6,17 @@ const projects = [
   {
     id: 1,
     title: 'Velox Automobiles',
-    description: 'A headless e-commerce experience built with Next.js, featuring seamless transitions and optimistic UI updates.',
+    description: 'Engineering excellence meets timeless design. Experience the pinnacle of automotive craftsmanship.',
     tech: ['React', 'Next.js', 'Tailwind', 'Framer Motion'],
-    image: 'https://images.unsplash.com/photo-1661956602116-aa6865609028?auto=format&fit=crop&q=80&w=800&h=600',
+    image: 'https://images.unsplash.com/photo-1625870605450-40b1803df06d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGVsZWN0cmljJTIwdmVoaWNsZXN8ZW58MHwwfDB8fHww',
     color: 'from-purple-500/20 to-blue-500/20',
   },
   {
     id: 2,
     title: 'Little Lemon Restaurant',
-    description: 'Real-time data visualization dashboard with highly interactive charts and a custom brutalist design system.',
+    description: 'We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.',
     tech: ['TypeScript', 'Recharts', 'Tailwind', 'Zustand'],
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800&h=600',
+    image: 'https://images.unsplash.com/photo-1582287014914-1db836ccf0f5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     color: 'from-emerald-500/20 to-teal-500/20',
   },
   {

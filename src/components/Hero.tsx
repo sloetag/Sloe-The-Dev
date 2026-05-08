@@ -50,7 +50,7 @@ export default function Hero() {
             {[Github, Linkedin, Mail].map((Icon, i) => (
               <a
                 key={i}
-                href="#"
+                href=""
                 className="text-gray-400 hover:text-white transition-colors p-2 rounded-full hover:bg-white/10"
               >
                 <Icon size={24} />
