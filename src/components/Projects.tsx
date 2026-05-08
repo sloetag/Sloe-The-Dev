@@ -5,7 +5,7 @@ import { ExternalLink, Github } from 'lucide-react';
 const projects = [
   {
     id: 1,
-    title: 'E-Commerce Storefront',
+    title: 'Velox Automobiles',
     description: 'A headless e-commerce experience built with Next.js, featuring seamless transitions and optimistic UI updates.',
     tech: ['React', 'Next.js', 'Tailwind', 'Framer Motion'],
     image: 'https://images.unsplash.com/photo-1661956602116-aa6865609028?auto=format&fit=crop&q=80&w=800&h=600',
@@ -13,7 +13,7 @@ const projects = [
   },
   {
     id: 2,
-    title: 'Financial Dashboard',
+    title: 'Little Lemon Restaurant',
     description: 'Real-time data visualization dashboard with highly interactive charts and a custom brutalist design system.',
     tech: ['TypeScript', 'Recharts', 'Tailwind', 'Zustand'],
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800&h=600',
