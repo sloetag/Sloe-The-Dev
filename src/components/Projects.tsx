@@ -39,7 +39,7 @@ export default function Projects() {
           viewport={{ once: true }}
           className="mb-20"
         >
-          <h2 className="text-3xl md:text-5xl font-bold mb-4">Selected Works.</h2>
+          <h2 className="text-3xl md:text-5xl font-bold mb-4">Projects</h2>
           <p className="text-gray-400 max-w-xl">
             Recent projects that showcase my focus on animation, detail, and robust architecture.
           </p>
