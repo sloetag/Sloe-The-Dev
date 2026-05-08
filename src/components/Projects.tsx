@@ -100,9 +100,6 @@ function ProjectCard({ project, index }: { project: any, index: number }) {
           <a href="#" className="flex items-center gap-2 text-sm font-medium text-white hover:text-gray-300 transition-colors" data-hoverable="true">
             View Live <ExternalLink size={16} />
           </a>
-          <a href="#" className="flex items-center gap-2 text-sm font-medium text-gray-400 hover:text-white transition-colors" data-hoverable="true">
-            Source <Github size={16} />
-          </a>
         </div>
       </div>
     </motion.div>

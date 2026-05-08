@@ -1,9 +1,9 @@
 import { motion, useScroll, useTransform } from 'motion/react';
 import { useRef } from 'react';
-import { Code2, PenTool, Layout, Layers, Terminal as TerminalIcon, Cpu } from 'lucide-react';
+import { PenTool, Layout, Layers, Terminal as TerminalIcon, Atom, Cpu } from 'lucide-react';
 
 const skills = [
-  { name: 'React & Next.js', icon: ReactIcon, category: 'Frontend' },
+  { name: 'React & Next.js', icon: Atom, category: 'Frontend' },
   { name: 'TypeScript', icon: TerminalIcon, category: 'Language' },
   { name: 'Tailwind CSS', icon: PenTool, category: 'Styling' },
   { name: 'Framer Motion', icon: Layout, category: 'Animation' },

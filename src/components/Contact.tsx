@@ -45,9 +45,9 @@ export default function Contact() {
         <div className="mt-32 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-sm font-mono text-gray-500">
           <p>© {new Date().getFullYear()} Sloe The Dev. All rights reserved.</p>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-white transition-colors" data-hoverable="true">Twitter</a>
-            <a href="#" className="hover:text-white transition-colors" data-hoverable="true">LinkedIn</a>
-            <a href="#" className="hover:text-white transition-colors" data-hoverable="true">GitHub</a>
+            <a href="" className="hover:text-white transition-colors" data-hoverable="true">Twitter</a>
+            <a href="https://linkedin.com/in/faith-alonge7" className="hover:text-white transition-colors" data-hoverable="true">LinkedIn</a>
+            <a href="https://github.com/sloetag" className="hover:text-white transition-colors" data-hoverable="true">GitHub</a>
           </div>
         </div>
       </div>
