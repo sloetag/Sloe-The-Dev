@@ -34,7 +34,7 @@ export default function Projects() {
     <section id="projects" className="py-32 px-6 md:px-24">
       <div className="max-w-5xl mx-auto w-full">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 1, y: 0 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="mb-20"
@@ -77,7 +77,7 @@ function ProjectCard({ project, index }: { project: any, index: number }) {
         <img 
           src={project.image} 
           alt={project.title} 
-          className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105 filter grayscale group-hover:grayscale-0"
+          className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105 group-hover:grayscale-0"
         />
       </div>
 
