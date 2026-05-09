@@ -33,7 +33,7 @@ export default function Contact() {
             viewport={{ once: true }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            href="mailto:contact@example.com"
+            href="mailto:faalonge007@gmail.com"
             className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-white text-black flex flex-col items-center justify-center group flex-shrink-0"
             data-hoverable="true"
           >
