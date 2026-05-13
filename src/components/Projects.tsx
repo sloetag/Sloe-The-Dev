@@ -5,9 +5,9 @@ import { ExternalLink, Github } from 'lucide-react';
 const projects = [
   {
     id: 1,
-    title: 'Velox Automobiles',
+    title: 'Velox Automobiles', 
     description: 'Engineering excellence meets timeless design. Experience the pinnacle of automotive craftsmanship.',
-    tech: ['React', 'Next.js', 'Tailwind', 'Framer Motion'],
+    tech: ['React', 'React Router', 'Tailwind', 'Framer Motion'],
     image: 'https://images.unsplash.com/photo-1625870605450-40b1803df06d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGVsZWN0cmljJTIwdmVoaWNsZXN8ZW58MHwwfDB8fHww',
     color: 'from-purple-500/20 to-blue-500/20',
   },

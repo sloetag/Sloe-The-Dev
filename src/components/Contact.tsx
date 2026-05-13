@@ -11,7 +11,7 @@ export default function Contact() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-4xl md:text-7xl font-bold tracking-tighter mb-6"
+              className="text-4xl md:text-7xl font-bold tracking-tighter mb-6 text-transparent bg-clip-text bg-gradient-to-r from-gray-200 to-gray-600"
             >
               Let's build something <br className="hidden md:block"/> extraordinary.
             </motion.h2>
