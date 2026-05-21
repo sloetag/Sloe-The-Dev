@@ -4,11 +4,11 @@ import { Code2, PenTool, Layout, Layers, Terminal as TerminalIcon, Cpu } from 'l
 
 const skills = [
   { name: 'React & Next.js', icon: ReactIcon, category: 'Frontend' },
-  { name: 'TypeScript', icon: TerminalIcon, category: 'Language' },
-  { name: 'Tailwind CSS', icon: PenTool, category: 'Styling' },
+  { name: 'TypeScript . JavaScript', icon: TerminalIcon, category: 'Languages' },
+  { name: 'Tailwind CSS . Bootstrap', icon: PenTool, category: 'Styling' },
   { name: 'Framer Motion', icon: Layout, category: 'Animation' },
   { name: 'State Management', icon: Layers, category: 'Architecture' },
-  { name: 'Web Performance', icon: Cpu, category: 'Optimization' },
+  { name: 'Web Performance . SEO', icon: Cpu, category: 'Optimization' },
 ];
 
 function ReactIcon(props: any) {
