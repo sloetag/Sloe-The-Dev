@@ -5,27 +5,29 @@ import { ExternalLink, Github } from 'lucide-react';
 const projects = [
   {
     id: 1,
-    title: 'Velox Automobiles', 
-    description: 'Engineering excellence meets timeless design. Experience the pinnacle of automotive craftsmanship.',
-    tech: ['React', 'React Router', 'Tailwind', 'Framer Motion'],
+    title: 'Velox Automobiles',
+    description: 'A modern automotive dealership platform showcasing the latest models with immersive 3D experiences.',
+    tech: ['React', 'React Router', 'Next.js', 'Tailwind CSS', 'Framer Motion'],
     image: 'https://images.unsplash.com/photo-1625870605450-40b1803df06d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGVsZWN0cmljJTIwdmVoaWNsZXN8ZW58MHwwfDB8fHww',
     color: 'from-purple-500/20 to-blue-500/20',
+    liveUrl: 'https://veloxmobile.vercel.app',
   },
   {
     id: 2,
     title: 'Little Lemon Restaurant',
     description: 'We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.',
-    tech: ['TypeScript', 'Recharts', 'Tailwind', 'Zustand'],
+    tech: ['TypeScript', 'React', 'Tailwind CSS', 'GSAP', 'React Router'],
     image: 'https://images.unsplash.com/photo-1582287014914-1db836ccf0f5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    color: 'from-emerald-500/20 to-teal-500/20',
+    liveUrl: 'https://littlelemon-i.vercel.app',
   },
   {
     id: 3,
-    title: 'AI Companion App',
-    description: 'A sophisticated conversational interface wrapping language models, complete with streaming responses and markdown support.',
+    title: 'E Commerce Storefront',
+    description: ' An enterprise-grade platform built for scaling large, high-volume catalogs.',
     tech: ['React', 'OpenAI', 'Framer Motion', 'Radix UI'],
-    image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800&h=600',
+    image: 'https://plus.unsplash.com/premium_photo-1664201889922-66bc3c778c1e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     color: 'from-orange-500/20 to-red-500/20',
+    liveUrl: 'https://sloethedev.vercel.app',
   }
 ];
 
@@ -77,7 +79,7 @@ function ProjectCard({ project, index }: { project: any, index: number }) {
         <img 
           src={project.image} 
           alt={project.title} 
-          className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105 group-hover:grayscale-0"
+          className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105 filter group-hover:brightness-80"
         />
       </div>
 
@@ -97,9 +99,28 @@ function ProjectCard({ project, index }: { project: any, index: number }) {
         </div>
 
         <div className="flex items-center gap-4 mt-auto">
-          <a href="#" className="flex items-center gap-2 text-sm font-medium text-white hover:text-gray-300 transition-colors" data-hoverable="true">
-            View Live <ExternalLink size={16} />
-          </a>
+          {project.liveUrl && (
+            <a 
+              href={project.liveUrl} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="flex items-center gap-2 text-sm font-medium text-white hover:text-gray-300 transition-colors" 
+              data-hoverable="true"
+            >
+              View Live <ExternalLink size={16} />
+            </a>
+          )}
+          {project.sourceUrl && (
+            <a 
+              href={project.sourceUrl} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="flex items-center gap-2 text-sm font-medium text-gray-400 hover:text-white transition-colors" 
+              data-hoverable="true"
+            >
+              Source <Github size={16} />
+            </a>
+          )}
         </div>
       </div>
     </motion.div>

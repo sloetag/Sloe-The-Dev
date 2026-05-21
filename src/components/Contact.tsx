@@ -11,7 +11,7 @@ export default function Contact() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-4xl md:text-7xl font-bold tracking-tighter mb-6 text-transparent bg-clip-text bg-gradient-to-r from-gray-200 to-gray-600"
+              className="text-4xl md:text-7xl font-bold tracking-tighter mb-6"
             >
               Let's build something <br className="hidden md:block"/> extraordinary.
             </motion.h2>
@@ -43,11 +43,11 @@ export default function Contact() {
         </div>
 
         <div className="mt-32 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-sm font-mono text-gray-500">
-          <p>© {new Date().getFullYear()} Sloe The Dev. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Frontend Developer. All rights reserved.</p>
           <div className="flex gap-6">
-            <a href="https://x.com/_dele_" className="hover:text-white transition-colors" data-hoverable="true">Twitter</a>
-            <a href="https://linkedin.com/in/faith-alonge7" className="hover:text-white transition-colors" data-hoverable="true">LinkedIn</a>
-            <a href="https://github.com/sloetag" className="hover:text-white transition-colors" data-hoverable="true">GitHub</a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors" data-hoverable="true">Twitter</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors" data-hoverable="true">LinkedIn</a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors" data-hoverable="true">GitHub</a>
           </div>
         </div>
       </div>

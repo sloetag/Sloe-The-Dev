@@ -1,36 +1,51 @@
-import { motion } from 'motion/react';
+import { motion, Variants } from 'motion/react';
 import { Github, Linkedin, Mail, Terminal, ChevronDown } from 'lucide-react';
 
 export default function Hero() {
+  const containerVariants: Variants = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15,
+        delayChildren: 0.1,
+      },
+    },
+  };
+
+  const itemVariants: Variants = {
+    hidden: { opacity: 0, y: 30 },
+    show: { opacity: 1, y: 0, transition: { type: 'spring', stiffness: 300, damping: 24 } },
+  };
+
   return (
     <section className="relative min-h-screen flex flex-col justify-center px-6 md:px-24 pt-20">
-      <div className="max-w-5xl mx-auto w-full z-10">
+      <motion.div 
+        className="max-w-5xl mx-auto w-full z-10"
+        variants={containerVariants}
+        initial="hidden"
+        animate="show"
+      >
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+          variants={itemVariants}
           className="flex items-center gap-3 text-gray-400 font-mono text-sm sm:text-base mb-6"
         >
           <Terminal size={18} className="text-white" />
-          <span>Hello, I'm Dele</span>
+          <span>Hello, World. I'm Dele </span>
         </motion.div>
 
         <motion.h1
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.1 }}
+          variants={itemVariants}
           className="text-5xl sm:text-7xl md:text-8xl font-bold tracking-tighter mb-6 text-white"
         >
           Frontend <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-200 to-gray-600">
-            Developer
+            Developer.
           </span>
         </motion.h1>
 
         <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
+          variants={itemVariants}
           className="text-gray-400 text-lg sm:text-xl max-w-2xl leading-relaxed mb-10"
         >
           I craft highly interactive, accessible, and performant web experiences. 
@@ -38,27 +53,25 @@ export default function Hero() {
         </motion.p>
 
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.3 }}
+          variants={itemVariants}
           className="flex items-center gap-6"
         >
-          <a href="#projects" className="group relative inline-flex items-center justify-center px-8 py-3 font-medium text-black bg-white rounded-full overflow-hidden transition-transform hover:scale-105 active:scale-95">
+          <a href="#projects" className="group relative inline-flex items-center justify-center px-8 py-3 font-medium text-black bg-white rounded-full overflow-hidden transition-transform hover:scale-105 active:scale-95" data-hoverable="true">
             <span className="relative z-10">View Work</span>
           </a>
           <div className="flex items-center gap-4">
-            {[Github, Linkedin, Mail].map((Icon, i) => (
-              <a
-                key={i}
-                href=""
-                className="text-gray-400 hover:text-white transition-colors p-2 rounded-full hover:bg-white/10"
-              >
-                <Icon size={24} />
-              </a>
-            ))}
+            <a href="https://github.com/sloetag" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors p-2 rounded-full hover:bg-white/10" data-hoverable="true">
+              <Github size={24} />
+            </a>
+            <a href="https://linkedin.com/in/faith-alonge7" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors p-2 rounded-full hover:bg-white/10" data-hoverable="true">
+              <Linkedin size={24} />
+            </a>
+            <a href="mailto:faalonge007@gmail.com" className="text-gray-400 hover:text-white transition-colors p-2 rounded-full hover:bg-white/10" data-hoverable="true">
+              <Mail size={24} />
+            </a>
           </div>
         </motion.div>
-      </div>
+      </motion.div>
 
       <motion.div
         initial={{ opacity: 0 }}
