@@ -74,7 +74,7 @@ export default function Loader({ onComplete }: { onComplete: () => void; key?: a
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          <span>BUILDING EXPERIENCE</span>
+          <span>building experience</span>
           <span className="text-emerald-500 font-bold">{progress}%</span>
         </motion.div>
       </div>
