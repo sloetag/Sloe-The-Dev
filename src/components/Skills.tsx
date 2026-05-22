@@ -36,7 +36,7 @@ export default function Skills() {
     <section ref={containerRef} className="py-32 px-6 md:px-24 relative overflow-hidden">
       <div className="max-w-5xl mx-auto w-full">
         <motion.div style={{ y, opacity }} className="relative z-10">
-          <h2 className="text-3xl md:text-5xl font-bold mb-4">Skills.</h2>
+          <h2 className="text-3xl md:text-5xl font-bold mb-4">Skills</h2>
           <p className="text-gray-400 max-w-xl mb-16">
             A curated stack optimized for building high-performance, accessible, and visually stunning web applications.
           </p>

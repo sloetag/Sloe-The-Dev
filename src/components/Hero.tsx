@@ -40,7 +40,7 @@ export default function Hero() {
         >
           Frontend <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-200 to-gray-600">
-            Developer.
+            Developer
           </span>
         </motion.h1>
 
