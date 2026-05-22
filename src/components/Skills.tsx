@@ -1,15 +1,17 @@
 import { motion, useScroll, useTransform } from 'motion/react';
 import { useRef } from 'react';
-import { Code2, PenTool, Layout, Layers, Terminal as TerminalIcon, Cpu } from 'lucide-react';
+import { Code2, PenTool, Layout, Layers, Terminal as TerminalIcon, Cpu, Brain, Atom } from 'lucide-react';
 
 const skills = [
-  { name: 'React & Next.js', icon: ReactIcon, category: 'Frontend' },
+  { name: 'React & Next.js', icon: Atom, category: 'Frontend' },
   { name: 'TypeScript . JavaScript', icon: TerminalIcon, category: 'Languages' },
-  { name: 'Tailwind CSS . Bootstrap', icon: PenTool, category: 'Styling' },
-  { name: 'Framer Motion', icon: Layout, category: 'Animation' },
-  { name: 'State Management', icon: Layers, category: 'Architecture' },
+  { name: 'Tailwind CSS . Bootstrap . Shadcn',  icon: PenTool, category: 'Styling' },
+  { name: 'Framer Motion . GSAP', icon: Layout, category: 'Animation' },
   { name: 'Web Performance . SEO', icon: Cpu, category: 'Optimization' },
-];
+  { name: 'Prompt Engineering . Generative AI . Google AI', icon: Brain, category: 'Artificial Intelligence'},
+  { name: 'State Management', icon: Layers, category: 'Architecture' },
+  
+]
 
 function ReactIcon(props: any) {
   return (

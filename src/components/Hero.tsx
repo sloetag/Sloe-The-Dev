@@ -31,7 +31,7 @@ export default function Hero() {
           className="flex items-center gap-3 text-gray-400 font-mono text-sm sm:text-base mb-6"
         >
           <Terminal size={18} className="text-white" />
-          <span>Hello, World. I'm Dele </span>
+          <span>Hello.... I'm Dele </span>
         </motion.div>
 
         <motion.h1
