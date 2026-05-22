@@ -6,6 +6,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Loader from './components/Loader';
+import BackToTop from './components/BackToTop';
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -25,6 +26,7 @@ export default function App() {
             <Skills />
             <Projects />
             <Contact />
+            <BackToTop isDark={true} />
           </>
         )}
       </div>
