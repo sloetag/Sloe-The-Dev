@@ -6,7 +6,7 @@ const projects = [
   {
     id: 1,
     title: 'Velox Automobiles',
-    description: 'A modern automotive dealership platform showcasing the latest models with immersive 3D experiences.',
+    description: 'A modern automotive dealership platform showcasing the latest models with immersive 3D experiences. Experience the culmination of artisanal craftsmanship and electric intelligence. A new era of automotive excellence, redefined for the modern connoisseur.',
     tech: ['React', 'React Router', 'Next.js', 'Tailwind CSS', 'Framer Motion'],
     image: 'https://images.unsplash.com/photo-1625870605450-40b1803df06d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGVsZWN0cmljJTIwdmVoaWNsZXN8ZW58MHwwfDB8fHww',
     color: 'from-purple-500/20 to-blue-500/20',
