@@ -15,7 +15,7 @@ const projects = [
   {
     id: 2,
     title: 'Little Lemon Restaurant',
-    description: 'We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.',
+    description: 'We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist. Sourced daily from local organic farms to ensure the authentic taste of the coast.',
     tech: ['TypeScript', 'React', 'Tailwind CSS', 'GSAP', 'React Router'],
     image: 'https://images.unsplash.com/photo-1582287014914-1db836ccf0f5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     liveUrl: 'https://littlelemon-i.vercel.app',
